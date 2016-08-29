@@ -2,7 +2,7 @@
 #include <iostream>
 
 using namespace std;
-// 
+// shubham
 int factorial1(int  n){
 	if(n!=1){
 	return(n * factorial(n-1));
