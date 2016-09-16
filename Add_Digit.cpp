@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 	int n;
-	scanf("%d",&n);
+	scanf("%d",&n);  //user input
 	int n1=n,s=0;
 	if(n1 < 0)
 		n1=-n1;
@@ -13,7 +13,7 @@ int main(){
 		s+=n1%10;
 		n1=n1/10;
 	}
-	if(n < 0)
+	if(n < 0)     //checking weather number is negative or not
 		printf("Sum of Digits is %d\n",-s);
 	else printf("Sum of Digits is %d\n",s);
 
