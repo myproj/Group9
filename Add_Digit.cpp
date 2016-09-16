@@ -7,14 +7,18 @@ int main(){
 	int n;
 	scanf("%d",&n);  //user input
 	int n1=n,s=0;
+	int k;
 	if(n1 < 0)
 		n1=-n1;
 	while(n1 > 0){
-		s+=n1%10;
+		k=n1%10;
+		s+=k;
 		n1=n1/10;
 	}
-	if(n < 0)     //checking weather number is negative or not
-		printf("Sum of Digits is %d\n",-s);
+	if(n < 0){
+		s = s-2*k;     //checking weather number is negative or not
+		printf("Sum of Digits is %d\n",s);
+	}
 	else printf("Sum of Digits is %d\n",s);
 
 	return 0;
